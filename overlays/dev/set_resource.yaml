@@ -5,8 +5,8 @@ metadata:
   namespace: mq
 spec:
   hard:
-    requests.cpu: 200m
-    requests.memory: 256Mi
-    limits.cpu: 200m
-    limits.memory: 256Mi
+    requests.cpu: 400m
+    requests.memory: 512Mi
+    limits.cpu: 400m
+    limits.memory: 512Mi
     requests.storage: 10Gi
