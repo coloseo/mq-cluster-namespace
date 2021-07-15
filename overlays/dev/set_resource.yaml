@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-resources
+  namespace: mq
+spec:
+  hard:
+    requests.cpu: 200m
+    requests.memory: 256Mi
+    limits.cpu: 200m
+    limits.memory: 256Mi
+    requests.storage: 10Gi
