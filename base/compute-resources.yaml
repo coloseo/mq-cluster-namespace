@@ -13,6 +13,6 @@ spec:
     persistentvolumeclaims: "4"
     pods: "5"
     configmaps: "5"
-    secrets: "5"
+    secrets: "10"
     services: "5"
     services.loadbalancers: "0"
