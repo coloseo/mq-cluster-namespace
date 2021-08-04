@@ -7,7 +7,7 @@ on:
 
 jobs:
   apply:
-    name: Set mq namespace
+    name: Set namespace
     runs-on: Ubuntu-20.04
     steps:
       - name: Checkout
@@ -27,5 +27,8 @@ jobs:
       - name: Update kubeconfig
         run: aws eks update-kubeconfig --name coloseo
 
-      - name: apply kustomize config
-        run: kubectl apply -k overlays/staging/
+      - name: Set kustomize
+        uses: imranismail/setup-kustomize@v1
+
+      - name: Apply kustomize
+        run: kustomize build overlays/staging | kubectl apply -f -
