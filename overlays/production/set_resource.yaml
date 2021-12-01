@@ -5,9 +5,9 @@ metadata:
   namespace: mq
 spec:
   hard:
-    requests.cpu: 4000m
-    requests.memory: 8Gi
+    requests.cpu: 6000m
+    requests.memory: 18Gi
     limits.cpu: 8000m
-    limits.memory: 16Gi
+    limits.memory: 24Gi
     requests.storage: 50Gi
     pods: "10"
